@@ -111,7 +111,7 @@
 			ID = requestAnimationFrame(draw,canvas);
 		if (intro == true) {
 			write("Move : <- ->",w/250,w/3.7,h/3,'black');
-			write("Fire : /",w/250,w/1.7,h/3,'black');
+			write("Fire : /",w/250,w/1.8,h/3,'black');
 			colorRect(xp,yp,10,10,'green');
 			colorRect(xp,yp+10,10,10,'blue');
 			colorRect(xp,yp-10,10,10,'red');
@@ -121,12 +121,12 @@
 			write("Pixel",w/180,w/2,h/10,'blue');
 			write("Don't Shoot the Boss",w/260,w/3,h/2.05,'white');
 			if(xp>=w-10)
-			write("Press Spacebar To Start",w/240,w/3.3,h/1.2,'black');					//intro ekraný
+			write("Press Spacebar To Start",w/240,w/3.3,h/1.2,'black');					//intro ekranÃ½
 			
 			return;
 		}
 			if (gameOver == true) {
-													//game over ekraný
+													//game over ekranÃ½
 				
 				return;
 			}
@@ -229,7 +229,7 @@
 			}
 		}
 		
-		function colorRect(leftX,topY,width,height,drawColor){				//Kare çizme fonksiyonu
+		function colorRect(leftX,topY,width,height,drawColor){				//Kare Ã§izme fonksiyonu
 			ctx.fillStyle = drawColor;
 			ctx.fillRect(leftX,topY,width,height);
 		}
@@ -444,7 +444,7 @@
 			if(xp>=w)
 			{if (e.keyCode == 32 && intro) {
 				intro = false
-				console.log("basladým")
+				console.log("basladÃ½m")
 			}
 			else if(e.keyCode == 32 && gameOver)
 			{
