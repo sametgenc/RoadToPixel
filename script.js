@@ -220,8 +220,7 @@
 				mouse.y = e.pageY;
 		}
 		
-		function lazerDraw(){	
-			console.log(lazerHeight);
+		function lazerDraw(){
 			if(gameOver==false){
 			colorRect(square.x,square.y-10,10,lazerHeight,getRandomColor());
 			colorRect(square.x+10,square.y-10,10,lazerHeight,getRandomColor());
@@ -444,7 +443,6 @@
 			if(xp>=w)
 			{if (e.keyCode == 32 && intro) {
 				intro = false
-				console.log("basladým")
 			}
 			else if(e.keyCode == 32 && gameOver)
 			{
