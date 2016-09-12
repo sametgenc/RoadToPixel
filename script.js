@@ -312,7 +312,7 @@
 		}
 		
 		function collisionLazer(){
-			step = 128;
+			step = 32;
 			if(((square.x-15) < boss.x + boss.pixelSize*4.5)  && ((square.x+15) > boss.x-boss.pixelSize*3.5)){
 				lazerHeight = boss.y-h+125;
 				colorRate+=1;
@@ -429,7 +429,7 @@
 				color:getRandomColor(),
 				w: 25 , h:25
 			});
-			colorRate-=20;
+			colorRate-=2;
 			}
 		}
 		
